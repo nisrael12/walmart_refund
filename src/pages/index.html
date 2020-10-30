@@ -3,53 +3,236 @@ layout: index-layout
 subject: My Email Templates
 ---
 
-<spacer size="16"></spacer>
-
 <container>
-
-  <spacer size="24"></spacer>
   
-  <row>
-    <columns small="12">
+  <container class="header">
 
-    <p class="lead">Hi there!</p>
-    <p style="color: #484848; line-height: 1.5;">Thanks for downloading <a href="https://get.foundation/emails/docs/">Foundation for Emails!</a> Your days of coding up painful HTML emails are officially over. You’ll soon be cranking out some slick, responsive emails in no time! To help get you up and running, we've put together 11 templates for the most common email use cases including newsletters, transactional emails, and marketing blasts. Feel free to customize them to your hearts content.</p>
+    <spacer spacer size-sm="5" size-lg="15"></spacer>
 
-    <spacer size="16"></spacer>
+    <row>
 
-    <center>
-      <menu class="vertical">
-        <item href="{{root}}basic.html" target="_blank">Basic Template</item>
-        <item href="{{root}}drip.html" target="_blank">Drip Template</item>
-        <item href="{{root}}hero.html" target="_blank">Hero Template</item>
-        <item href="{{root}}marketing.html" target="_blank">Marketing Template</item>
-        <item href="{{root}}newsletter.html" target="_blank">Newsletter Template</item>
-        <item href="{{root}}newsletter-2.html" target="_blank">Newsletter 2 Template</item>
-        <item href="{{root}}order.html" target="_blank">Order Template</item>
-        <item href="{{root}}password.html" target="_blank">Password Template</item>
-        <item href="{{root}}sidebar.html" target="_blank">Sidebar Template</item>
-        <item href="{{root}}sidebar-hero.html" target="_blank">Sidebar Hero Template</item>
-        <item href="{{root}}welcome.html" target="_blank">Welcome Template</item>
-      </menu>
-    </center>
+      <columns small="6"  large="8">
+        <img src="https://i.imgur.com/BvdJlN9.png" alt="">
+      </columns>
 
-    <spacer size="16"></spacer>
+    
+      <columns small="6" large="4">
+        <center>
+          <button href="#" class="radius show-for-large">View Order</button>
+          <button href="#" class="small radius hide-for-large">View Order</button>
+          <spacer size-sm="5" size-lg="10"></spacer>
+          <a href="#" class="order">Order 254534637457</a>
+        </center>
+      </columns> 
 
-    <p>Happy Coding,</p>
-    <p>The Foundation Team</p>
+    </row>
+    
+    <spacer size-sm="0" size-lg="15"></spacer>
+
+    <row>
+      <columns>
+        <h4>We've issued you a refund</h4>
+      </columns>
+    </row>
+
+    <spacer size-sm="0" size-lg="10"></spacer>
+  </container>
+
+  <container class="content">
+
+    <spacer size-sm="5" size-lg="15"></spacer>
+
+    <row>
+      <columns class="letter-content">
+        
+        <h6>Hi Lorem,</h6>
+
+        <spacer size-sm="5" size-lg="10"></spacer>
+
+        <p>Sorry for the issue you experienced with your order. We've issued you a refund. Feel free to use, donate or dispose of any unwanted items – no need to return to the store.
+        </p>
+      </columns>
+    </row>
+
+    <spacer size-sm="5" size-lg="15"></spacer>
+    
+    <row>
+      <columns class="details-content">
+        
+        <h5>Here's a summary of your refund details:</h5>
+
+        <spacer size-sm="5" size-lg="15"></spacer>
 
 
-    <spacer size="16"></spacer>
+        <container class="item-content">
 
-    </columns>
-  </row>
+                <row>
+
+                  <columns class="item" small="6" large="6">
+                    <h6>Items</h6>
+                    <row>
+                      <img src="https://i.imgur.com/rLXLQx3.jpg" alt="">
+                      <p>McCafe Premium Roast Medium Ground Coffee, Caffeinated, 12 oz Bag</p>
+                    </row>
+                  </columns>
+
+                  <columns class="issue" small="2" large="2">
+                    <h6>Issue</h6>
+                    <p>Missing Item</p>
+                  </columns>
+
+                  <columns class="qty" small="2" large="2">
+                    <h6>Issue</h6>
+                    <p>Qty 1.0</p>
+                  </columns>
+
+                  <columns class="amount" small="2" large="2">
+                    <h6>Amount</h6>
+                    <p>$5.42</p>
+                  </columns>
+                  
+                </row>
+          <spacer size-sm="0" size-lg="10"></spacer>
+        </container>
+
+
+        <container class="subtotal-content">
+          <spacer size-sm="5" size-lg="10"></spacer>
+          <row>
+            <columns class="total" small="6" large="6">
+              <p>Subtotal (1 item)</p>
+            </columns>
+            <columns class="price" small="6" large="6">
+              <p class="text-right">$5.42</p>
+            </columns>
+          </row>  
+
+          <spacer size-sm="0" size-lg="5"></spacer>
+
+          <row>
+            <columns class="total" small="6" large="6">
+              <p>Tax</p>
+            </columns>
+            <columns class="price" small="6" large="6">
+              <p class="text-right">$0.00</p>
+            </columns>
+          </row>  
+        </container>
+
+          <spacer size-sm="5" size-lg="10"></spacer>
+        <container class="payment-content">
+          <row>
+            <columns class="total" small="6" large="6">
+              <p>Total refund</p>
+            </columns>
+            <columns class="price" small="6" large="6">
+              <p class="text-right">$5.42</p>
+            </columns>
+          </row>  
+
+          <spacer size-sm="0" size-lg="5"></spacer>
+
+          <row>
+            <columns class="total" small="6" large="6">
+              <p>VISA ending in XXXXX</p>
+            </columns>
+            <columns class="price" small="6" large="6">
+              <p class="text-right">$5.42</p>
+            </columns>
+          </row>  
+        </container>
+
+
+        <spacer size-sm="10" size-lg="15"></spacer>
+        <row>
+          <columns class="refund">
+          <p>Credit card refunds may take 3 -5 business days to post</p>
+          <spacer size-sm="0" size-lg="5"></spacer>
+          </columns>
+        </row>
+        
+      </columns>
+      
+    </row>
+  </container>
+
+  <container class="footer">
+
+    <row class="question-content">
+
+      <columns small="3" large="3">
+        <spacer size-sm="10"></spacer>
+        <img src="https://i.imgur.com/WD07SP0.png" alt="" class="float-left">
+      </columns>
+
+      <columns class="questions text-center" small="6" large="6">
+        <spacer size-sm="10" size-lg="30"></spacer>
+          <h6>Questions?</h6>
+          <p><a href="https://www.walmart.com/grocery/help">Email Customer Care </a>
+            or call
+          <a href="tel:8009249206">(800) 924 9206.</a> </p>
+      </columns>
+
+      <columns small="3" large="3">
+        <spacer size-sm="10"></spacer>
+        <img src="https://i.imgur.com/7a82I0H.png" alt="" class="float-right">
+      </columns>
+
+    </row>
+
+    
+    <row class="footer-menu">
+      
+      <columns>
+        <spacer size-sm="10" size-lg="25"></spacer>
+      <center>
+        <menu>
+          <item href="https://www.walmart.com/account">My Account</item>
+          <item href="https://www.walmart.com/grocery/">Go Shopping</item>
+          <item href="https://www.walmart.com/grocery/help?comm-msg-vehicle=EMAIL&comm-msg-id=823c2ac8-919a-41cf-832f-87e846423419">Help</item>
+          <item href="https://www.walmart.com/grocery/help?comm-msg-vehicle=EMAIL&comm-msg-id=823c2ac8-919a-41cf-832f-87e846423419">Contact Us</item>
+        </menu>
+      </center>
+        <spacer size-sm="10" size-lg="25"></spacer>
+      </columns>
+
+    </row>
+
+    <row class="footer-social">
+        
+        <columns small="4" large="5">
+          <h3>Stay Connected</h3>
+        </columns>
+  
+        <columns small="8" large="7" class="social">
+          <center>
+            <a href="https://apps.apple.com/us/app/walmart-grocery-shopping/id998754894?mt=8"><img src="https://i.imgur.com/FIMjSbr.png" alt="" class="mobile"></a> 
+            <a href="https://www.facebook.com/walmart"><img src="https://i.imgur.com/O1WH3hY.png" alt=""></a>
+            <a href="https://www.instagram.com/walmart/"><img src="https://i.imgur.com/O7ARRw4.png" alt=""></a>
+            <a href="https://www.pinterest.com/walmart/"><img src="https://i.imgur.com/j33Fppu.png" alt=""></a>
+            <a href="https://twitter.com/Walmart"><img src="https://i.imgur.com/6a7eXv8.png" alt=""></a>
+            <a href="https://www.youtube.com/walmart"><img src="https://i.imgur.com/5v1sVbQ.png" alt="" class="youtube"></a>
+          </center>
+        </columns>
+    
+    </row>
+
+    <row class="footer-text">
+      
+      <columns>
+        <spacer size-sm="10" size-lg="15"></spacer>
+        <p>Please note that product prices and availability are limited-time and are subject to change.</p>
+        <p>Do not reply to this email. The mailbox is not monitored. If you require assistance, please click here for help.</p>
+        <p>Security & Privacy <br>
+          Walmart protects your security and privacy. We will never ask for personal information (such as passwords or credit card numbers) in an email newsletter. If you receive such a request, please do not respond to the email. <a href="https://corporate.walmart.com/privacy-security/tips/?adid=1500000000000039633330&veh=eml&comm-msg-vehicle=EMAIL&comm-msg-id=823c2ac8-919a-41cf-832f-87e846423419">Learn more.</a>  See our <a href="https://corporate.walmart.com/privacy-security/walmart-privacy-policy?adid=1500000000000039633330&veh=eml&comm-msg-vehicle=EMAIL&comm-msg-id=823c2ac8-919a-41cf-832f-87e846423419">Privacy Policy.</a></p>
+        <p>Email Marketing, Walmart.com, 850 Cherry Avenue, San Bruno, CA 94066</p>
+        <p> ©2019 Walmart Stores, Inc. All rights reserved.</p>
+        <spacer size-sm="0" size-lg="5"></spacer>
+    </columns>  
+    
+    </row>
+  
+  </container>
+
+
 </container>
-
-<spacer size="16"></spacer>
-
-<center>
-  <small>Keep on keepin' on. &lt;3 <a style="color: #cacaca; text-decoration: underline;" href="https://zurb.com/">ZURB</a> </small>
-</center>
-
-<spacer size="16"></spacer>
-

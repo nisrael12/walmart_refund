@@ -6,54 +6,368 @@ body,
 html, 
 .body {
   background: #f3f3f3 !important;
+  padding-bottom: 10px !important;
+
+  .container{
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      width: 95% !important;}
+  }
 }
 
-.container.header {
-  background: #f3f3f3;
+.header{
+  background: #007dbd !important;
+  background-color: #007dbd !important;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+  }
+  
+  .columns{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-right: 0 !important;
+    }
+
+  }
+
+  img{
+    width: 120px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      width: 60px !important;
+    }
+  }
+
+  .order{
+    color: white;
+    font-size: 12px;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 8px !important;
+    }
+  }
+
+  h4{
+    color: white;
+
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 12px !important;
+    }
+  }
 }
 
-.body-drip {
-  border-top: 8px solid #663399;
+.content{
+  .letter-content{
+   
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding: 0 !important;
+    }
+
+    h6{
+      font-weight: 600 !important;
+      font-size: 12px;
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 10px !important;
+      }
+    }
+
+    p{
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 10px;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 10px !important;
+      }
+    }
+
+    
+  }
+
+  .details-content{
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding: 0 !important;
+    }
+
+    h5{
+      font-weight: 600 !important;
+      
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 10px !important;
+      }
+    }
+  .item-content{
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+
+    h6{
+      font-weight: 600;
+      font-size: 12px;
+
+      @media only screen and (max-width: #{$global-breakpoint}){
+        font-size: 8px !important;
+      }
+    }
+
+    img{
+      width: 40px;
+      display: inline-block;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        width: 20px !important;
+      }
+    }
+
+    .item{
+      
+      
+      
+      p{
+        width: 80%;
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 10px;
+        hyphens: none;
+        
+
+        @media only screen and (max-width: #{$global-breakpoint}) {
+          font-size: 8px !important;
+          width: 75% !important;
+        }
+      }
+    }
+
+    .amount{
+      h6,p{
+        text-align: right;
+        
+        @media only screen and (max-width: #{$global-breakpoint}) {
+          font-size: 8px !important;
+        }
+      }
+
+    }
+
+    .issue, .qty{
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        padding-right: 10px !important;
+        
+      }
+      p{
+        color: #a4a4a4;
+        @media only screen and (max-width: #{$global-breakpoint}) {
+          font-size: 8px !important;
+          padding-right: 5px !important;
+        }
+      }
+    }
+
+  }
+
+    .subtotal-content, .payment-content{
+      border-bottom: 1px solid #e6e6e6;
+      width: 100%;
+
+      .total{
+        p{
+          text-align: left;
+
+          @media only screen and (max-width: #{$global-breakpoint}) {
+            font-size: 8px !important;
+          }
+        }
+      }
+
+      .price{
+        p{
+          text-align: right;
+          font-weight: 600;
+
+          @media only screen and (max-width: #{$global-breakpoint}) {
+            font-size: 8px !important;
+          }
+        }
+      }
+    }
+
+    .refund{
+      // width: 100%;
+
+      p{
+        color: #a4a4a4;
+
+        @media only screen and (max-width: #{$global-breakpoint}) {
+          font-size: 8px !important;
+        }
+      }
+
+      
+    }
+  }
 }
 
-// Full Width Headers
-.header {
-  background: #8a8a8a;
-}
+.footer{
+  
 
-.header .columns {
-  padding-bottom: 0;
-}
+  .question-content{
+    background: #007dbd  !important;
+    background-color: #007dbd !important;
 
-.header p {
-  color: #fff;
-  padding-top: 15px;
-}
+    th{
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+  
+    }
+    
+    img{
+      width: 140px;
+      vertical-align: bottom;
+  
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        width: 60px !important;
+        vertical-align: bottom !important;
+      }
+    }
+  
+    h6, p{
+      text-align: center;
+      Margin: 0;
+    }
+  
+    h6{
+      font-weight: 600;
+      color: white;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 10px !important;
+      }
+    }
 
-.header .wrapper-inner {
-  padding: 20px;
-}
+    a{
+      font-weight: 600;
+      color: #fde4b3;
+    }
 
-.header .container {
-  background: transparent;
-}
+    p{
+      color: white;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 7px !important;
+      }
+    }
 
-// Social Media
-table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
-}
+  }
 
-table.button.twitter table td {
-  background: #1daced !important;
-  border-color: #1daced;
-}
+  .footer-menu{
+    background: #005c8c  !important;
+    background-color: #005c8c !important;
+    border-bottom: 1px solid #ffffff;
+    
+    th{
+      padding-top: 0px;
+      padding-bottom: 0px;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        display: initial;
+      }
+    }
 
-table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
-}
+    a{
+      font-weight: 600;
+      text-align: center;
+      color: #fbc969;
+      hyphens: none;
 
-.wrapper.secondary {
-  background: #f3f3f3;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+       font-size: 8px; 
+      }
+    }
+
+  }
+
+  .footer-social{
+    background: #005c8c  !important;
+    background-color: #005c8c !important;
+    border-bottom: 1px solid #ffffff;
+    
+
+    th{
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      vertical-align: middle;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      }
+    }
+
+    h3{
+      color: #fbc969;
+      font-size: 18px;
+      display: inline-block;
+      padding-right: 10px;
+      padding-left: 10px;
+      font-weight: 600;
+      Margin: 0 !important;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 10px !important;
+        padding-right: 5px !important ;
+      }
+    }
+
+    img{
+      width: 30px;
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 15px;
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+       width: 20px !important;
+       padding-right: 5px !important;
+      }
+    }
+
+    .mobile{
+      width: 70px;
+      padding-left: 15px;
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        width: 40px !important;
+        padding-left: 0px !important;
+       }
+    }
+
+    .youtube{
+      padding-right: 0px !important;
+    }
+
+  }
+
+  .footer-text{
+    background: #005c8c  !important;
+    background-color: #005c8c !important;
+    border-bottom: 1px solid #ffffff;
+    
+
+    th{
+      padding-right: 0;
+      padding-left: 6px;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      }
+    }
+
+    p{
+      color: $white;
+      font-size: 9px;
+      line-height: 1.5;
+
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 6px !important;
+        line-height: 1.3;
+        }
+    }
+
+  }
 }
