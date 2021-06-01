@@ -24,9 +24,21 @@ html,
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 16px;
-    padding-right: 16px;
+    
+    td{
+      text-align: center !important;
+    }
     @media only screen and (max-width: #{$global-breakpoint}) {
       padding-right: 0 !important;
+
+      td{
+        text-align: center !important;
+        
+      }
+
+      a{
+        text-align: center !important;
+      }
     }
 
   }
